@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search pro </title>
+    <link rel="stylesheet" href="boostrap file/css/bootstrap.css">
+    <link rel="stylesheet" href="boostrap file/css/bootstrap.min.css">
+
+<body>
+
+    <!-- links of all the websit -->
+    <link rel="stylesheet" href="../boostrap file/css/bootstrap.css">
+    <link rel="stylesheet" href="../boostrap file/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../boostrap file/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../boostrap file/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../boostrap file/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="../boostrap file/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./bootstyle.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <!--  end of links of all the websit -->
+    <!--  fontawasome -->
+    <script src="../boostrap file/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet">
+    <!-- end of fontawasome -->
+
+    <body>
+        <h1 class="text-center text-uppercase text-primary">filter function of javascript</h1>
+        <div class="container mt-2">
+            <form class="form-inline my-2 my-lg-0"></form>
+            <input class="form-control mr-sm-2" type="search" placeholder="Search..." id="myInput" onkeyup="searchfun()"
+                aria-label="Search">
+            </form>
+        </div>
+
+        <!-- ************************************************************************************ -->
+        <div class="container">
+            <table id="Table">
+                <tr class="header">
+                    <th class="px-4" style="width: 30%;">Name</th>
+                    <th class="px-4" style="width: 40%;">Work </th>
+                    <th class="px-4" style="width: 30%;">Money </th>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 ">Alan</td>
+                    <td class="text-primary px-4 ">Founder of Aone ,AI & nuraparts/nano,cyberparts ,share.com,aone park
+                        etc..
+                    </td>
+                    <td class="text-primary px-4 ">$ 12000000 per-m</td>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 ">Deepa</td>
+                    <td class="text-primary px-4 ">Tacher</td>
+                    <td class="text-primary px-4 ">Rs 12000 per-m</td>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 ">Muskan</td>
+                    <td class="text-primary px-4 ">Tacher</td>
+                    <td class="text-primary px-4 ">Rs 13000 per-m</td>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 ">Darshan</td>
+                    <td class="text-primary px-4 ">Tacher</td>
+                    <td class="text-primary px-4 ">Rs 50000 per-m</td>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 "> rohan</td>
+                    <td class="text-primary px-4 ">Mcu</td>
+                    <td class="text-primary px-4 ">Rs 5000 per-m</td>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 ">roshan</td>
+                    <td class="text-primary px-4 ">Shoper</td>
+                    <td class="text-primary px-4 ">Rs 12000 per-m</td>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 ">Asbin</td>
+                    <td class="text-primary px-4 ">co-funder</td>
+                    <td class="text-primary px-4 ">Rs 120000 per-m</td>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 "> a quick brown fox jumps over the lazy dog </td>
+                    <td class="text-primary px-4 "></td>
+                    <td class="text-primary px-4 "> </td>
+
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 "> doreamon </td>
+                    <td class="text-primary px-4 "> Anime </td>
+                    <td class="text-primary px-4 "> Dubbed Yes </td>
+
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 "> pokemon </td>
+                    <td class="text-primary px-4 "> Anime </td>
+                    <td class="text-primary px-4 "> Dubbed Yes </td>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 "> Beyblade burst </td>
+                    <td class="text-primary px-4 "> Anime </td>
+                    <td class="text-primary px-4 "> Dubbed Yes </td>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 "> Beyblade g revelouation</td>
+                    <td class="text-primary px-4 "> Anime </td>
+                    <td class="text-primary px-4 "> Dubbed Yes </td>
+                </tr>
+                <tr class="header">
+                    <th style="width: 30%;">Anime/name</th>
+                    <th style="width: 40%;">Main cracters /cateogary</th>
+                    <th style="width: 30%;">date/company </th>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 ">Darling in the franxx</td>
+                    <td class="text-primary px-4 ">zero two tow </td>
+                    <td class="text-primary px-4 ">2012</td>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 ">Digimon</td>
+                    <td class="text-primary px-4 ">trex</td>
+                    <td class="text-primary px-4 ">2004</td>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 ">zero:rem</td>
+                    <td class="text-primary px-4 ">rem rom and a bay</td>
+                    <td class="text-primary px-4 ">2010</td>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 ">Demon king </td>
+                    <td class="text-primary px-4 ">Androide two girls </td>
+                    <td class="text-primary px-4 ">Rs 50000 per-m</td>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 ">roll no 21</td>
+                    <td class="text-primary px-4 ">Kirsh and others</td>
+                    <td class="text-primary px-4 ">2005</td>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 ">Siri</td>
+                    <td class="text-primary px-4 ">AI</td>
+                    <td class="text-primary px-4 ">2020</td>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 ">goolge </td>
+                    <td class="text-primary px-4 ">AI & search engin</td>
+                    <td class="text-primary px-4 ">goolge</td>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 "> a quick brown fox jumps over the lazy dog </td>
+                    <td class="text-primary px-4 "></td>
+                    <td class="text-primary px-4 "> </td>
+
+                </tr>
+
+                <tr>
+                    <td class="text-primary px-4 "> firday</td>
+                    <td class="text-primary px-4 "> Ai </td>
+                    <td class="text-primary px-4 "> Aone</td>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 "> rem</td>
+                    <td class="text-primary px-4 "> Ai </td>
+                    <td class="text-primary px-4 "> Aone</td>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 "> Siri</td>
+                    <td class="text-primary px-4 "> Ai </td>
+                    <td class="text-primary px-4 "> Aone</td>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 "> Bki</td>
+                    <td class="text-primary px-4 "> Ai </td>
+                    <td class="text-primary px-4 "> Aone</td>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 "> tadashi</td>
+                    <td class="text-primary px-4 "> Ai </td>
+                    <td class="text-primary px-4 "> mcu/cartton</td>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 "> Edith </td>
+                    <td class="text-primary px-4 "> Ai </td>
+                    <td class="text-primary px-4 "> mcu</td>
+
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 "> jarvis </td>
+                    <td class="text-primary px-4 "> Ai </td>
+                    <td class="text-primary px-4 "> mcu </td>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 "> firday </td>
+                    <td class="text-primary px-4 "> Ai </td>
+                    <td class="text-primary px-4 "> mcu </td>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 "> motu patlu </td>
+                    <td class="text-primary px-4 "> cartoon </td>
+                    <td class="text-primary px-4 "> indian </td>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 "> choota bhim </td>
+                    <td class="text-primary px-4 "> cartoon </td>
+                    <td class="text-primary px-4 "> indian </td>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 "> another world with my smart home </td>
+                    <td class="text-primary px-4 "> anime </td>
+                    <td class="text-primary px-4 "> japanes / english dub</td>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 "> roll.no.21 </td>
+                    <td class="text-primary px-4 "> cartoon </td>
+                    <td class="text-primary px-4 "> indian </td>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 "> bir the robo boy</td>
+                    <td class="text-primary px-4 "> cartoon </td>
+                    <td class="text-primary px-4 "> indian </td>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 ">kishna </td>
+                    <td class="text-primary px-4 "> cartoon </td>
+                    <td class="text-primary px-4 "> indian </td>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 ">Apple, ball cat dog,elephant,fish ,gun,hen,house ,horse, </td>
+                    <td class="text-primary px-4 "> - </td>
+                    <td class="text-primary px-4 ">-</td>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 "> ice-cream,jug,key,key bord,lion,light,nose,next</td>
+                    <td class="text-primary px-4 "> - </td>
+                    <td class="text-primary px-4 ">-</td>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 "> orange,one,parrot,protat,preson,queen,quistion,quize</td>
+                    <td class="text-primary px-4 "> - </td>
+                    <td class="text-primary px-4 ">-</td>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 ">rose,row,rohan,stop,string,shop,showes,snake</td>
+                    <td class="text-primary px-4 "> - </td>
+                    <td class="text-primary px-4 ">-</td>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 ">tiger,table,it,ummrella,underare, ven, vegetabel,</td>
+                    <td class="text-primary px-4 "> - </td>
+                    <td class="text-primary px-4 ">-</td>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 ">watch,wast,wax, x-ray,ray,kai,tyosn,daichi</td>
+                    <td class="text-primary px-4 "> - </td>
+                    <td class="text-primary px-4 ">-</td>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 ">yeak,yan,wizer,walker,monkey,donkey,husedand</td>
+                    <td class="text-primary px-4 "> - </td>
+                    <td class="text-primary px-4 ">-</td>
+                </tr>
+                <tr>
+                    <td class="text-primary px-4 ">zero,hero,year,month,may,max,mac,window,sorry,zebra</td>
+                    <td class="text-primary px-4 "> - </td>
+                    <td class="text-primary px-4 ">-</td>
+                </tr>
+
+            </table>
+        </div>
+        <div class="container">
+            <div id="article">
+                <article>
+                    <p style="color:blue;">a quick brown fox jumps over the lazy dog.</p>
+
+                    <p style="color:yellow;">a quick brown fox jumps over the lazy dog.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore debitis quo iure facere in
+                        dignissimos explicabo vel repellat. Dicta exercitationem, corporis nisi error et inventore
+                        architecto,
+                        cumque, consectetur recusandae nostrum ipsam. Voluptate placeat quis veniam obcaecati
+                        exercitationem
+                        eveniet mollitia, culpa dolorum quos adipisci hic quo eos natus. Dolore ab magnam ducimus illo,
+                        perspiciatis dolores optio hic omnis nulla. Quae, mollitia ullam maiores molestias odit
+                        blanditiis
+                        recusandae, aliquam amet, totam reprehenderit expedita repudiandae autem laudantium nemo.
+                        Praesentium
+                        nesciunt unde magni. Cumque vel sapiente distinctio animi commodi omnis ab eaque asperiores
+                        repellendus
+                        pariatur est blanditiis, fugit aperiam minima aut voluptatem iusto vero?
+                        .</p>
+                </article>
+                <article>
+                    <p style="color:blue;">a quick brown fox jumps over the lazy dog.</p>
+
+                    <p style="color:yellow;">a quick brown fox jumps over the lazy dog.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore debitis quo iure facere in
+                        dignissimos explicabo vel repellat. Dicta exercitationem, corporis nisi error et inventore
+                        architecto,
+                        cumque, consectetur recusandae nostrum ipsam. Voluptate placeat quis veniam obcaecati
+                        exercitationem
+                        eveniet mollitia, culpa dolorum quos adipisci hic quo eos natus. Dolore ab magnam ducimus illo,
+                        perspiciatis dolores optio hic omnis nulla. Quae, mollitia ullam maiores molestias odit
+                        blanditiis
+                        recusandae, aliquam amet, totam reprehenderit expedita repudiandae autem laudantium nemo.
+                        Praesentium
+                        nesciunt unde magni. Cumque vel sapiente distinctio animi commodi omnis ab eaque asperiores
+                        repellendus
+                        pariatur est blanditiis, fugit aperiam minima aut voluptatem iusto vero?
+                        .</p>
+                </article>
+                <article>
+                    <p style="color:blue;">a quick brown fox jumps over the lazy dog.</p>
+
+                    <p style="color:yellow;">a quick brown fox jumps over the lazy dog.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore debitis quo iure facere in
+                        dignissimos explicabo vel repellat. Dicta exercitationem, corporis nisi error et inventore
+                        architecto,
+                        cumque, consectetur recusandae nostrum ipsam. Voluptate placeat quis veniam obcaecati
+                        exercitationem
+                        eveniet mollitia, culpa dolorum quos adipisci hic quo eos natus. Dolore ab magnam ducimus illo,
+                        perspiciatis dolores optio hic omnis nulla. Quae, mollitia ullam maiores molestias odit
+                        blanditiis
+                        recusandae, aliquam amet, totam reprehenderit expedita repudiandae autem laudantium nemo.
+                        Praesentium
+                        nesciunt unde magni. Cumque vel sapiente distinctio animi commodi omnis ab eaque asperiores
+                        repellendus
+                        pariatur est blanditiis, fugit aperiam minima aut voluptatem iusto vero?
+                        .</p>
+                </article>
+                <article>
+                    <p style="color:blue;">a quick brown fox jumps over the lazy dog.</p>
+
+                    <p style="color:yellow;">a quick brown fox jumps over the lazy dog.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore debitis quo iure facere in
+                        dignissimos explicabo vel repellat. Dicta exercitationem, corporis nisi error et inventore
+                        architecto,
+                        cumque, consectetur recusandae nostrum ipsam. Voluptate placeat quis veniam obcaecati
+                        exercitationem
+                        eveniet mollitia, culpa dolorum quos adipisci hic quo eos natus. Dolore ab magnam ducimus illo,
+                        perspiciatis dolores optio hic omnis nulla. Quae, mollitia ullam maiores molestias odit
+                        blanditiis
+                        recusandae, aliquam amet, totam reprehenderit expedita repudiandae autem laudantium nemo.
+                        Praesentium
+                        nesciunt unde magni. Cumque vel sapiente distinctio animi commodi omnis ab eaque asperiores
+                        repellendus
+                        pariatur est blanditiis, fugit aperiam minima aut voluptatem iusto vero?
+                        .</p>
+                </article>
+                <article>
+                    <p style="color:blue;">a quick brown fox jumps over the lazy dog.</p>
+
+                    <p style="color:yellow;">a quick brown fox jumps over the lazy dog.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore debitis quo iure facere in
+                        dignissimos explicabo vel repellat. Dicta exercitationem, corporis nisi error et inventore
+                        architecto,
+                        cumque, consectetur recusandae nostrum ipsam. Voluptate placeat quis veniam obcaecati
+                        exercitationem
+                        eveniet mollitia, culpa dolorum quos adipisci hic quo eos natus. Dolore ab magnam ducimus illo,
+                        perspiciatis dolores optio hic omnis nulla. Quae, mollitia ullam maiores molestias odit
+                        blanditiis
+                        recusandae, aliquam amet, totam reprehenderit expedita repudiandae autem laudantium nemo.
+                        Praesentium
+                        nesciunt unde magni. Cumque vel sapiente distinctio animi commodi omnis ab eaque asperiores
+                        repellendus
+                        pariatur est blanditiis, fugit aperiam minima aut voluptatem iusto vero?
+                        .</p>
+                </article>
+
+
+                <article>
+                    <p style="color:green;">a quick brown fox jumps over the lazy dog.</p>
+
+                    <p style="color: orange;">a quick brown fox jumps over the lazy dog
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore debitis quo iure facere in
+                        dignissimos explicabo vel repellat. Dicta exercitationem, corporis nisi error et inventore
+                        architecto,
+                        cumque, consectetur recusandae nostrum ipsam. Voluptate placeat quis veniam obcaecati
+                        exercitationem
+                        eveniet mollitia, culpa dolorum quos adipisci hic quo eos natus. Dolore ab magnam ducimus illo,
+                        perspiciatis dolores optio hic omnis nulla. Quae, mollitia ullam maiores molestias odit
+                        blanditiis
+                        recusandae, aliquam amet, totam reprehenderit expedita repudiandae autem laudantium nemo.
+                        Praesentium
+                        nesciunt unde magni. Cumque vel sapiente distinctio animi commodi omnis ab eaque asperiores
+                        repellendus
+                        pariatur est blanditiis, fugit aperiam minima aut voluptatem iusto vero?.</p>
+                </article>
+            </div>
+            <article>
+                <p style="color:green;">a quick brown fox jumps over the lazy dog.</p>
+
+                <p style="color: orange;">a quick brown fox jumps over the lazy dog
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore debitis quo iure facere in
+                    dignissimos explicabo vel repellat. Dicta exercitationem, corporis nisi error et inventore
+                    architecto,
+                    cumque, consectetur recusandae nostrum ipsam. Voluptate placeat quis veniam obcaecati exercitationem
+                    eveniet mollitia, culpa dolorum quos adipisci hic quo eos natus. Dolore ab magnam ducimus illo,
+                    perspiciatis dolores optio hic omnis nulla. Quae, mollitia ullam maiores molestias odit blanditiis
+                    recusandae, aliquam amet, totam reprehenderit expedita repudiandae autem laudantium nemo.
+                    Praesentium
+                    nesciunt unde magni. Cumque vel sapiente distinctio animi commodi omnis ab eaque asperiores
+                    repellendus
+                    pariatur est blanditiis, fugit aperiam minima aut voluptatem iusto vero?.</p>
+            </article>
+
+        </div>
+
+
+
+        <style>
+            body {
+                background: #222222;
+            }
+
+            table {
+                width: 100%;
+            }
+
+            .header {
+                background: rgb(122, 116, 116);
+                color: #fff;
+            }
+
+            th {
+                padding: 10px 0px;
+            }
+
+            td {
+                padding: 10px 0px;
+            }
+
+            tr {
+                background: rgb(226, 222, 222);
+            }
+
+            tr:hover {
+                background: #000;
+                color: #fff;
+            }
+        </style>
+        <!-- <script src="search.js"></script> -->
+        <!-- these is for the search function  -->
+        <script>
+            const searchfun = () => {
+                let filter = document.getElementById('myInput').value.toUpperCase();
+                let Table = document.getElementById('Table');
+                let tr = Table.getElementsByTagName('tr');
+                for (var i = 0; i < tr.length; i++) {
+                    let td = tr[i].getElementsByTagName('td')[0];
+                    if (td) {
+                        let textvalue = td.textContent || td.innerHTML;
+                        if (textvalue.toUpperCase().indexOf(filter) > -1) {
+                            tr[i].style.display = "";
+                        }
+                        else {
+                            tr[i].style.display = "none";
+
+                        }
+                    }
+                }
+            }
+        </script>
+        <!--// these is end for  the search function  -->
+        <script>
+            const searchfun = () => {
+                let filter = document.getElementById('myInput').value.toUpperCase();
+                let article = document.getElementById('article');
+                let p = article.getElementsByTagName('p');
+                for (var i = 0; i < p.length; i++) {
+                    let p = p[i].getElementsByTagName('p')[0];
+                    if (p) {
+                        let textvalue = td.textContent || td.innerHTML;
+                        if (textvalue.toUpperCase().indexOf(filter) > -1) {
+                            p[i].style.display = "";
+                        }
+                        else {
+                            p[i].style.display = "none";
+
+                        }
+                    }
+                }
+
+            }
+
+        </script>
+    </body>
+
+</html>
